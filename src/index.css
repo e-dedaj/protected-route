@@ -1,0 +1,52 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, Arial, sans-serif;
+  color: #111;
+  background: #fff;
+}
+
+* { box-sizing: border-box; }
+html, body, #root { margin: 0; height: 100%; }
+
+.layout { display: flex; height: 100vh; }
+
+.sidebar {
+  width: 220px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1rem;
+  background: #111;
+  color: #fff;
+}
+.brand { font-size: 1.2rem; font-weight: 700; margin-bottom: 1.5rem; }
+.links { flex: 1; display: flex; flex-direction: column; gap: 0.25rem; }
+.sidebar a { padding: 0.6rem 0.75rem; border-radius: 8px; color: #bbb; text-decoration: none; }
+.sidebar a:hover { background: #222; color: #fff; }
+.sidebar a.active { background: #fff; color: #111; font-weight: 600; }
+.auth { display: flex; flex-direction: column; gap: 0.75rem; }
+.auth span { color: #bbb; font-size: 0.9rem; padding: 0 0.75rem; }
+.auth button { background: transparent; border: 1px solid #555; }
+
+.content { flex: 1; padding: 2rem; overflow-y: auto; }
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #111;
+  color: #fff;
+  cursor: pointer;
+}
+input {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 0.75rem 0;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+.card { max-width: 400px; padding: 1.5rem; border: 1px solid #ccc; border-radius: 12px; }
+.error { color: #b00020; }
