@@ -23,3 +23,4 @@ npm run dev
 ```
 
 Then open the URL shown in the terminal (usually `http://localhost:5173`).
+<img width="925" height="906" alt="image" src="https://github.com/user-attachments/assets/8b629eee-ffb2-469e-a5ca-d2f2c7f8cca8" />
